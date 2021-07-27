@@ -20,7 +20,7 @@ mongoose.connect(process.env.MONGO_URI ,{
 	useUnifiedTopology: true
 }).then(() => { console.log("connected to mongo db")},
    error => {
-     console.error('Eror connected to mongo db');
+     console.error('Error connected to mongo db');
   });
 
   

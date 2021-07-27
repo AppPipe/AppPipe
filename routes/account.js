@@ -36,7 +36,7 @@ router.post("/login",async(req,res) =>{
   const user = await AccountModel.findOne({ email }, function (err,User){
     if(err )return res.status(500).send({
       success: false,
-      message: 'User already exist!'
+      message: 'Something Go Wrong Try Again!'
     });
       if(!User){
         return res.status(500).send({
